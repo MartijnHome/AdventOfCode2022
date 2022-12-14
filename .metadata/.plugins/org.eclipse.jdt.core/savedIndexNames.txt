@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/home/martijnvs/Bureaublad/adventOfCode2022/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+3826155675.index
+984947292.index

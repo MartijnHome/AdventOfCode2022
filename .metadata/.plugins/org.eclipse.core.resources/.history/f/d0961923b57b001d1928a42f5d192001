@@ -1,0 +1,11 @@
+package sliedregt;
+
+public class DayOne {
+
+	private String data;
+	
+	public static void main(String[] args) {
+		System.out.println("Hallo");
+	}
+
+}
