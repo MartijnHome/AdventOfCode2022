@@ -2293,12 +2293,27 @@ public class DayOne {
 			}
 		}
 		
-		int biggest = 0;
-		for (int i = 0; i < values.size(); i++)
-			if (values.get(i) > biggest)
-				biggest = values.get(i);
+		List<Integer> sorted = new ArrayList<Integer>();
+		sorted.add(values.get(0));
+		System.out.println(values.size());
+		for (int i = 1; i < values.size(); i++)
+		{
+			boolean smallest = true;
+			for (int j = 0; j < sorted.size(); j++)
+			{
+				if (sorted.get(j) < values.get(i))
+				{
+					smallest = false;
+					sorted.add(j, values.get(i));
+					break;
+				}
+					
+			}
+			if (smallest)
+				sorted.add(values.get(i));
+		}
 		
-		System.out.println(biggest);
+		System.out.println(sorted.get(0) + sorted.get(1) + sorted.get(2));
 	}
 
 }
